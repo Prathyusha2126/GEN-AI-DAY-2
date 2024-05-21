@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collegeYears>
+    <year>
+        <id>1</id>
+        <sections>9</sections>
+        <startDate>2023-08-15</startDate>
+        <endDate>2024-05-20</endDate>
+    </year>
+    <year>
+        <id>2</id>
+         <sections>8</sections>
+        <startDate>2024-08-15</startDate>
+        <endDate>2025-05-20</endDate>
+    </year>
+    <year>
+        <id>3</id>
+         <sections>6</sections>
+        <startDate>2025-08-15</startDate>
+        <endDate>2026-05-20</endDate>
+    </year>
+    <year>
+        <id>4</id>
+         <sections>4</sections>
+        <startDate>2026-08-15</startDate>
+        <endDate>2027-05-20</endDate>
+    </year>
+</collegeYears>

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Users</title>    
+</head>
+<body>
+    <h1>Users</h1>
+    <table id="userTable" border="1" width="1000">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User rows will be appended here by JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Update User</h2>
+    <form id="updateForm">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" readonly><br><br>
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" name="userEmail"><br><br>
+        <button type="button" onclick="updateUser()">Save Changes</button>
+    </form>
+
+    <script>
+        let users = [
+            { id: 1, name: 'xyz', email: 'xyz@gmail.com' },
+            { id: 2, name: 'ijk', email: 'ijk@gmail.com' },
+            { id: 3, name: 'abc', email: 'abc@gmail.com' }
+        ];
+
+        function displayUsers() {
+            const tbody = document.querySelector('#userTable tbody');
+            tbody.innerHTML = '';
+            users.forEach(user => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${user.id}</td>
+                    <td>${user.name}</td>
+                    <td>${user.email}</td>
+                    <td>
+                        <button onclick="editUser(${user.id})">Edit</button>
+                        <button onclick="deleteUser(${user.id})">Delete</button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function editUser(id) {
+			window.alert("Are you sure do you want to edit?");
+            const user = users.find(user => user.id === id);
+            document.getElementById('userId').value = user.id;
+            document.getElementById('userName').value = user.name;
+            document.getElementById('userEmail').value = user.email;
+        }
+
+        function updateUser() {
+            const id = parseInt(document.getElementById('userId').value);
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const userIndex = users.findIndex(user => user.id === id);
+            if (userIndex !== -1) {
+                users[userIndex].name = name;
+                users[userIndex].email = email;
+                displayUsers();
+                document.getElementById('updateForm').reset();
+            }
+        }
+
+        function deleteUser(id) {
+		window.alert("Are you sure do you want to delete?");
+            users = users.filter(user => user.id !== id);
+            displayUsers();
+        }
+
+        document.addEventListener('DOMContentLoaded', displayUsers);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<department value="IT">
+    <year value="2">
+        <student>
+            <name>abc</name>
+            <id>1</id>
+            <email>abc@gmail.com</email>
+        </student>
+        <student>
+            <name>ijk</name>
+            <id>2</id>
+            <email>ijk@gmail.com</email>
+        </student>
+    </year>
+    <year value="3">
+        <student>
+            <name>abcd</name>
+            <id>1</id>
+            <email>abcd@gmail.com</email>
+        </student>
+        <student>
+            <name>ijkl</name>
+            <id>1</id>
+            <email>ijkl@gmail.com</email>
+        </student>
+    </year>
+	<year value="4">
+        <student>
+            <name>abcde</name>
+            <id>1</id>
+            <email>abcde@gmail.com</email>
+        </student>
+        <student>
+            <name>ijklm</name>
+            <id>1</id>
+            <email>ijklm@gmail.com</email>
+        </student>
+    </year>
+</department>

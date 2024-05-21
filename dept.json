@@ -1,0 +1,24 @@
+{
+    "Departments": [
+        {
+            "Name": "Computer Science and Engineering",
+			"Code": "CSE",
+            "Head": "Dr.k.Rameshwariah"
+        },
+        {
+            "Name": "Electrical and Electonics Engineering",
+			"Code": "EEE",
+            "Head": "DR.P.Ramesh"
+        }
+		{
+			"name":"Electronics and Communication Engineering",
+		"code":"ECE",
+		"head":"DR.S.Ravi chand"
+		}
+		{
+			"name":"Humanities and sciences",
+		"code":"H& S",
+		"head":"DR.E.Chandra shekar"
+		}
+		]
+}

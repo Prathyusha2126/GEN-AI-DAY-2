@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<department>
+	<count>6</count>
+	<dept>
+		<name>Computer Science and Engineering</name>
+		<code>CSE</code>
+		<head>DR.k.Rameshwaraiah</head>
+	</dept>
+	<dept>
+		<name>Electronics and Communication Engineering</name>
+		<code>ECE</code>
+		<head>DR.S.Ravi chand</head>
+	</dept>
+	<dept>
+		<name>Humanities and sciences</name>
+		<code>H& S</code>
+		<head>DR.E.Chandra shekar</head>
+	</dept>
+	<dept>
+		<name>Civil Engineering</name>
+		<code>CE</code>
+		<head>DR.Y.Srinivas</head>
+	</dept>
+	<dept>
+		<name>Mechanical Engineering</name>
+		<code>ME</code>
+		<head>DR.G.Janardhana Raju</head>
+	</dept>
+	<dept>
+		<name>Electrical and Electonics Engineering</name>
+		<code>EEE</code>
+		<head>DR.P.Ramesh</head>
+	</dept>
+</department>
+		
